@@ -36,7 +36,7 @@ describe('Bob', () => {
     expect(result).toEqual('Whatever.')
   })
 
-  xit('using acronyms in regular speech', () => {
+  it('using acronyms in regular speech', () => {
     const result = hey("It's OK if you don't want to go to the DMV.")
     expect(result).toEqual('Whatever.')
   })
@@ -52,7 +52,7 @@ describe('Bob', () => {
   })
 
   it('no letters', () => {
-    const result = hey('1, 2, 3')
+    const result = hey('1, 2, 3.')
     expect(result).toEqual('Whatever.')
   })
 
@@ -76,7 +76,7 @@ describe('Bob', () => {
     expect(result).toEqual('Whatever.')
   })
 
-  xit('prattling on', () => {
+  it('prattling on', () => {
     const result = hey('Wait! Hang on.  Are you going to be OK?')
     expect(result).toEqual('Sure.')
   })
@@ -116,7 +116,7 @@ describe('Bob', () => {
     expect(result).toEqual('Fine. Be that way!')
   })
 
-  xit('non-question ending with whitespace', () => {
+  it('non-question ending with whitespace', () => {
     const result = hey('This is a statement ending with whitespace      ')
     expect(result).toEqual('Whatever.')
   })
